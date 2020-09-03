@@ -25,6 +25,8 @@ addons:
       - libbtrfs-dev
       - go-md2man
       - parallel
+arch:
+  - ppc64le
 before_install:
   - docker pull fedora &
   - (wget https://dl.google.com/go/go1.13.7.linux-amd64.tar.gz && tar xf go1.13.7.linux-amd64.tar.gz && sudo mv go /usr/local)
